@@ -66,7 +66,7 @@ class Marker:
         print(f"{self.Colors['cyan']}Checkpoint {self.checkpoints}{self.Colors['RESET']}")
         self.checkpoints += 1
 
-    def sig(self, color):                                               #Signal
+    def sig(self, color='red'):                                               #Signal
         if color in self.Colors:
             color_code = self.Colors[color]
             print(f"{color_code}{self.signals}{self.Colors['RESET']}")
